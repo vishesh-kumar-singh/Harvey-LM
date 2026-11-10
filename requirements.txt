@@ -1,0 +1,29 @@
+# Python 3.12. Versions are the ones the experiments were run with.
+# Install the CUDA build of torch that matches your driver first (https://pytorch.org/get-started/).
+torch==2.14.0
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+pandas==3.0.5
+tqdm==4.70.1
+
+# tokenizer / data utilities (no pretrained weights are downloaded or used)
+tokenizers==0.23.2
+transformers==5.17.0      # PreTrainedTokenizerFast wrapper, LR schedulers, config I/O only
+datasets==5.0.1
+huggingface_hub==1.31.0   # dataset download only
+safetensors==0.8.0
+accelerate==1.15.0
+python-dotenv==1.2.3
+
+# task heads
+pytorch-crf==0.7.2        # Phase 2 linear-chain CRF
+
+# evaluation (official scorers)
+bert-score==0.3.13
+rouge_score==0.1.2
+sacrebleu==2.6.0
+nltk==3.10.4
+
+# plots
+matplotlib==3.11.2

@@ -1,0 +1,39 @@
+# --- large artefacts: datasets, checkpoints, caches (download / regenerate; see README) ---
+**/data/*
+!**/data/.gitkeep
+**/models/*
+!**/models/.gitkeep
+!**/models/tokenizer/
+!**/models/tokenizer/**
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+
+# --- results files (as requested) ---
+results.txt
+results.tex
+**/results.txt
+**/results.tex
+
+# --- logs ---
+*.log
+nohup*.out
+**/logs/
+
+# --- python ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# --- secrets / local config ---
+.env
+*.env
+
+# --- OS / editor ---
+.DS_Store
+.vscode/
+.idea/
